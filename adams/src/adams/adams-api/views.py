@@ -25,7 +25,7 @@ def post_data(request):
         return HttpResponseBadRequest()
 
     for value in data:
-        if (all key in data for key in ('contract_name', 'location', 'external_first_last_name', 'internal_first_last_name')):
+        if (all key in data for key in ('contract_name', 'location', 'external_first_last_name', 'vendor_email', internal_first_last_name')):
             new_entry = VendorData.objects.create(**test)
             inserted_rows.append(model_to_dict(new_test))
 
